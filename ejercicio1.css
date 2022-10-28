@@ -1,0 +1,32 @@
+.izquierda {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  gap: 100px;
+  padding: 10px;
+  height: 100vw;
+  width: 100px;
+  color: white;
+}
+
+.derecha {
+  background-color: red;
+  display: grid;
+  flex-grow: initial;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+@media (width <640px) {
+  .izquierda {
+    display: flex;
+    background-color: red;
+    flex-direction: row;
+    justify-content: start;
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+  }
+}
